@@ -1,4 +1,4 @@
-# CourseBaby 👶 🎓
+# CourseGenie 🧞‍♂️ 🎓
 
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/akshaybahadur21/CourseBaby/blob/main/LICENSE) 
 
@@ -17,7 +17,7 @@ TBA
 ## File Organization 🗄️
 
 ```shell
-├── CourseBaby (Current Directory)
+├── CourseGenie (Current Directory)
     ├── F1 :  Folder
         ├── 0.png
         ├── 1.png
@@ -27,7 +27,7 @@ TBA
     ├── utils : Utils Folder
         ├── utils.py : One utilities
         └── utils2.py : Two utilities
-    ├── CourseBaby.py : Main Application
+    ├── CourseGenie.py : Main Application
     ├── LICENSE
     ├── requirements.txt
     └── readme.md
@@ -42,9 +42,9 @@ If you face any problem, kindly raise an issue
 
 ## Setup 🖥️
 
-1) Copy all the emojis in this folder `emoji/` folder.
-2) Check all the utilities stored in `utils/` folder
-3) Run `RainingEmoji.py` to run the application.
+1) TBA
+2) TBA
+3) TBA
 
 ## Execution 🐉
 
