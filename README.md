@@ -49,7 +49,7 @@ If you face any problem, kindly raise an issue
 ## Execution 🐉
 
 ```
-python3 CoureBaby.py
+python3 CourseGenie.py
 ```
 
 ## Results 📊
