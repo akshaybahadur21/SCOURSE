@@ -1,4 +1,4 @@
-# scourse 🧞‍♂️ 🎓
+# SCOURSE 🔍 🎓
 
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/akshaybahadur21/CourseBaby/blob/main/LICENSE) 
 
@@ -17,7 +17,7 @@ TBA
 ## File Organization 🗄️
 
 ```shell
-├── scourse (Current Directory)
+├── SCOURSE (Current Directory)
     ├── F1 :  Folder
         ├── 0.png
         ├── 1.png
