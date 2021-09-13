@@ -1,4 +1,4 @@
-# CourseGenie 🧞‍♂️ 🎓
+# scourse 🧞‍♂️ 🎓
 
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/akshaybahadur21/CourseBaby/blob/main/LICENSE) 
 
@@ -17,7 +17,7 @@ TBA
 ## File Organization 🗄️
 
 ```shell
-├── CourseGenie (Current Directory)
+├── scourse (Current Directory)
     ├── F1 :  Folder
         ├── 0.png
         ├── 1.png
@@ -27,7 +27,7 @@ TBA
     ├── utils : Utils Folder
         ├── utils.py : One utilities
         └── utils2.py : Two utilities
-    ├── CourseGenie.py : Main Application
+    ├── scourse.py : Main Application
     ├── LICENSE
     ├── requirements.txt
     └── readme.md
@@ -49,7 +49,7 @@ If you face any problem, kindly raise an issue
 ## Execution 🐉
 
 ```
-python3 CourseGenie.py
+python3 scourse.py
 ```
 
 ## Results 📊
