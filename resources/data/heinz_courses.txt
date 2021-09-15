@@ -1,0 +1,276 @@
+90-435,Public Finance,12
+90-700,Heinz Journal,3
+90-703,Gender, Politics and Policies in the US and Across the World,6
+90-704,Poverty, Inequality and Social Policies:  An International Comparison,12
+90-705,Policy Analysis I,12
+90-706,Public Finance: Theories and Cases,12
+90-707,Statistical Reasoning,12
+90-709,Intermediate Economic Analysis,12
+90-710,Applied Economic Analysis,12
+90-711,Statistical Reasoning with R,12
+90-713,Policy and Politics an International Perspective,12
+90-714,Policy and Politics in American Institutions,12
+90-717,Writing for Public Policy,6
+90-718,Strategic Presentation Skills,6
+90-719,Physical Technical Systems I,12
+90-720,Physical Technical Systems II,12
+90-721,Healthcare Management,6
+90-722,Management Science I: Optimization &amp; Multicriteria Methods,6
+90-723,Financial Statements and Analysis of Companies,6
+90-724,Financial Analysis,12
+90-725,Management Accounting,6
+90-728,Introduction to Database Management,6
+90-730,Policy Analysis in Practice,12
+90-731,Public Financial Management,6
+90-734,Urban Policy,6
+90-736,Public Finance,12
+90-738,Applied Economics Analysis II,12
+90-739,Systems Synthesis I,12
+90-743,Urban and Regional Economic Development,12
+90-744,Nonprofit Statements &amp; Analysis,6
+90-745,Methods of Policy Analysis: Future of Work,-1
+90-747,Cost Benefit Analysis,6
+90-748,Real Estate Development,6
+90-750,Civic Engagement As A Community Process,6
+90-752,Rise of the Asian Economies,12
+90-753,Advanced Geographic Information Systems,6
+90-754,Elective Politics and Policy-Making,6
+90-760,Management Science II,6
+90-763,Human Rights Conflicts &amp; Development,6
+90-765,Cities, Technology and the Environment,6
+90-769,Critical AI Studies for Public Policy,6
+90-774,Public Expenditure Analysis,12
+90-777,Intermediate Statistics,6
+90-780,Pennsylvania Data Impact Lab,12
+90-782,Multi Media,12
+90-783,Policy Innovation Lab,6
+90-784,Affordable Housing Policy and Finance,6
+90-785,Elections, Politics and Public Policy Making,3
+90-788,Financing the Public Good,6
+90-789,Resilient &amp; Sustainable Communities,12
+90-798,Systems Analysis: Environmental Policy,6
+90-801,Media &amp; Communication Design I,6
+90-802,Public Policy Analytics: Cases &amp; Issues,6
+90-804,Media &amp; Communication Design II,6
+90-805,Issues in Global Urbanization,-1
+90-807,Planning by Design: Campuses, Waterfronts, Districts, and Cities,12
+90-808,Energy Policy,6
+90-810,Social Movements,3
+90-812,Introduction to Programming with Python,6
+90-814,Public Private Partnerships,6
+90-818,Lean Performance Improvement Lab: H C,6
+90-819,Intermediate Programming with Python,6
+90-822,Critical Analysis of Policy Research,6
+90-823,Program Evaluation,12
+90-824,Cost Benefit Analysis,6
+90-825,Innovation Management in Practice,-1
+90-832,Health Law,6
+90-833,Population Health,6
+90-834,Health Care Geographical Information Systems,12
+90-835,Special Topics:  Designing Smart and Healthy Systems,6
+90-836,Health Systems,6
+90-838,Database Management for Policy Analytics,12
+90-839,Global Health Security,3
+90-843,Dev Fin Tools for Sustainable Econ Dev,3
+90-844,Change Management for Innovation,6
+90-845,Social Entrepreneurship,6
+90-855,Leadership/Management Seminar:  How Washington Works,6
+90-856,Leadership/Management Seminar: Public Interest Tech in Practice,6
+90-858,How Ideas Become Policy,6
+90-860,Policy in a Global Economy,12
+90-861,Health Policy,6
+90-864,Democracy Now &amp; Next,3
+90-865,Policy and Leadership in Public Education,6
+90-871,Policy and Gender Workshop,3
+90-872,Using R for Policy Data Analysis,6
+90-874,Special Topics: Principles &amp; Practices of R&amp;D Management,6
+90-880,Behavioral Economics,12
+90-882,Behavioral Economics in Public Policy,12
+90-885,Data Visualization and Dashboards,6
+90-888,DC Fellowship Practicum I,2
+90-893,Policy Topics: Environment Policy,6
+90-894,Policy Topics I: Federal Budget Policy,6
+90-896,Policy Topics: Sustainable Development,6
+90-901,Ph.D. Seminar I,12
+90-906,Phd Econometrics I,12
+90-907,Econometric Theory and Methods,12
+90-908,Ph.D. Microeconomics,12
+90-918,Ph.D. Seminar III,12
+91-717,Business Writing for Leaders,6
+91-729,Business Analytics for Managers,6
+91-800,Organizational Management,12
+91-801,Statistical Methods for Managers,12
+91-803,Economic Principles of Policy Analysis,12
+91-804,Financial Analysis for Managers,12
+91-809,Organizational Change,6
+91-819,Optimization and Risk Modeling for Managers,6
+91-820,Strategic Planning,12
+91-855,Financial Management,12
+91-856,Managing Information Technology,6
+91-864,Leading in a Lean and Six Sigma World,6
+91-869,Conflict Resolution,6
+93-703,Arts Enterprises:  Structures and Strategies,12
+93-717,Writing for Creative Industries,6
+93-732,Database Theory and Practice for Creative Enterprises,6
+93-804,Arts in Education,6
+93-807,Museum Operations,6
+93-808,Exhibitions Management,6
+93-809,Public Art,6
+93-811,Producing a Performing Arts Season,6
+93-812,Presenting Performing Arts &amp; Festivals,6
+93-813,Arts Facilities Management,6
+93-821,External Relations:  Arts Marketing and PR,6
+93-826,External Relations: Fundraising &amp; Individual Giving,6
+93-827,External Relations:  Fundraising and Institutional Giving,6
+93-828,Advanced Topics in Fundraising,3
+93-830,Disruptive Technologies in Arts Enterprises,6
+93-831,Introduction to Business Law for Arts Managers,12
+93-832,Arts &amp; Community Development,6
+93-837,Artistic Development in the Music Industry,3
+93-844,Live Music:  Touring and Revenue Streams,6
+93-846,Cultural Policy &amp; Advocacy in the US,6
+93-847,Arts Management Professional Seminar I,0
+93-849,Arts Management Professional Seminar II,0
+93-851,Film Economics, Marketing &amp; Distribution,12
+93-852,Production Management,6
+93-853,Digital Innovation and Entrepreneurship,6
+93-854,Film Acquisition,3
+93-855,Intellectual Property,6
+93-856,Business Development,6
+93-857,Business of Gaming,4
+93-858,Market Research in the Entertainment Industry,3
+93-859,Fandom in Music and Media,3
+93-861,Script/Story Analysis,6
+93-864,Music Monetization &amp; Song Realities,3
+93-866,Creative Producing,6
+93-869,Television Economics,6
+93-870,Introduction to Writing for Television,3
+93-871,Television Business and Legal Affairs,9
+93-872,Music Supervision,3
+93-873,Film Exhibition,3
+93-876,Television Marketing and Advertising,6
+93-878,Branded Entertainment,3
+93-879,Navigating the Practical Realities of the Film Industry,3
+93-889,Capstone Management Project I,3
+94-700,Organizational Design &amp; Implementation,6
+94-701,Business Writing,6
+94-702,Professional Writing,6
+94-705,Health Economics,12
+94-706,Healthcare Information Systems,12
+94-708,Applied Strategic Marketing,6
+94-718,Strategic Presentation Skills,6
+94-728,Business Intelligence &amp; Analytics,6
+94-732,Managing Disruption in Media and Entertainment,6
+94-774,Business Process Modeling,6
+94-775,Unstructured Data Analytics for Policy,6
+94-800,Negotiation,6
+94-801,Acting for Management,6
+94-802,Geographic Information Systems,12
+94-803,Consulting Lab,6
+94-806,Privacy in the Digital Age,6
+94-808,Management Consulting,12
+94-811,Strategy Development,6
+94-813,Project Management,6
+94-814,Evidence-Based Management,6
+94-823,Measuring Social,12
+94-824,Creating Results-Oriented Programs,6
+94-827,SAS for Public Policy,6
+94-828,Survey Design,6
+94-832,Business Intelligence &amp; Data Mining SAS,6
+94-833,Decision Analysis and Multicriteria Decision Making,6
+94-834,Applied Econometrics I,6
+94-835,Applied Econometrics II,6
+94-836,Ethics &amp; Policy of Data Analytics,6
+94-837,Leading with Equity &amp; Inclusion: Personal &amp; Interpersonal,3
+94-839,Leading with Equity &amp; Inclusion: Organizational &amp; Structural/Systemic,3
+94-842,Programming R for Analytics,6
+94-843,Multi-Modal Communication and Research,6
+94-845,Smart Cities: Growth and Intelligent Transportation Systems,6
+94-851,Transforming Cities: Cities and Sustainability,3
+94-852,Transforming Cities: Cities and Social Justice,3
+94-854,Developing as a Leader,6
+94-855,Innovation Management in Practice,6
+94-856,Managerial and Engineering Economics,12
+94-857,The Strategy and Management of Technological Innovation,12
+94-859,International Crisis Negotiation Exercise,3
+94-860,Regulation of Internet Edge Platforms,6
+94-866,Design Thinking,6
+94-867,Decision Analytics for Business and Policy,12
+94-870,Telling Stories with Data,6
+94-874,Design Thinking for Complex Systems,6
+94-876,Computational Forensics and AI,12
+94-880,R Shiny for Operations Management,6
+94-881,Managing Analytic Projects,6
+94-883,Applied Ethical Analysis,6
+94-886,Advances in Robotic Process Automation,6
+94-887,Applied Analytics:  ML Pipeline,12
+94-889,Machine Learning for Public Policy Lab,12
+94-890,Race, Politics and Policies in the US,6
+94-891,Hacking for Defense/ Homeland Security,12
+94-892,Communicating COVID: Using Data &amp; Visualizations to Build Trust and Cause Action,3
+95-702,Distributed Systems for Information Systems Management,12
+95-703,Database Management,12
+95-705,Telecommunications Management,12
+95-706,Object Oriented Analysis and Design,6
+95-710,Economic Analysis,6
+95-712,Object Oriented Programming in JAVA,12
+95-717,Writing for Information Systems Management,6
+95-718,Professional Speaking,6
+95-719,Accounting and Finance Foundations,6
+95-720,Information Systems Project,-1
+95-722,Digital Transformation,6
+95-723,Managing Disruptive Technologies,6
+95-729,E-Commerce Tech, Machine Learning, Analytics, &amp; Bots,6
+95-730,E-Business Technology and Management,12
+95-733,Internet of Things,6
+95-734,Managing Digital Business,12
+95-736,Advanced Relational Database Management,6
+95-737,NoSQL Database Management,6
+95-743,Cybersecurity Policy and Governance II,6
+95-744,Cybersecurity Policy and Governance I,6
+95-746,Cloud Security,6
+95-747,Security Data Analytics,6
+95-748,Software and Security,6
+95-749,Cryptography,6
+95-752,Introduction to Information Security Management,12
+95-755,Information Security Risk Management I,6
+95-757,Information Security Policy &amp; Management,6
+95-758,Network and Internet Security,12
+95-759,Malicious Code Analysis,6
+95-760,Decision Making Under Uncertainty,6
+95-771,Data Structures and Algorithms,12
+95-775,IT Business Leadership,6
+95-778,R for Data Science,6
+95-791,Data Mining,6
+95-794,Tech Startup: Market Discovery,6
+95-796,Statistics for IT Managers,6
+95-798,Tech Startup: Building Your Company,6
+95-799,Linux and Open Source,6
+95-807,Object-Oriented Programming for Managers,12
+95-808,IT Project Management,6
+95-810,Blockchain Fundamentals,6
+95-812,Introduction to the ITIL Framework,6
+95-813,Intermediate Database Management,6
+95-818,Privacy, Policy, Law And Technology,12
+95-819,A/B Testing, Design and Analysis,6
+95-824,Policies of Wireless Systems,12
+95-828,Machine Learning for Problem Solving,12
+95-851,Making Products Count: Data Science for Product Managers,6
+95-855,Network Traffic Analysis,6
+95-862,Current Topics in Privacy Seminar,3
+95-865,Unstructured Data Analytics,6
+95-866,Advanced Business Analytics,6
+95-868,Exploring and Visualizing Data,6
+95-869,Big Data and Large-scale Computing,6
+95-874,Agile Methods,6
+95-878,Engineering Privacy in Software,12
+95-881,Web Application Development,6
+95-882,Enterprise Web Development,6
+95-883,Ethical Penetration Testing,6
+95-884,Network Defenses,6
+95-885,Data Science and Big Data,12
+95-888,Data Focused Python,6
+95-889,Applied Threat Analysis,6
+95-891,Introduction to Artificial Intelligence,12
+95-898,Introduction to Python,6
+95-900,Internship,0
