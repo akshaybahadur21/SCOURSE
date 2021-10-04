@@ -1,4 +1,5 @@
 from src.etl.etl import performETL
+from src.algo.course_similarity import course_sim
 
 
 class SCOURSE:
@@ -8,9 +9,9 @@ class SCOURSE:
     def run(self):
         if self.perFromETL:
             performETL()
-        # TODO : rest of the implementation
+        course_sim("Machine Learning")
 
 
 if __name__ == '__main__':
-    scourses = SCOURSE(True)
+    scourses = SCOURSE(False)
     scourses.run()
