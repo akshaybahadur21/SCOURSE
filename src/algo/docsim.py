@@ -29,7 +29,21 @@ from gensim.models.keyedvectors import Word2VecKeyedVectors
 # nltk_stop_words = set(stopwords.words("english"))
 
 # Or use a hard-coded list of English stopwords
-nltk_stop_words = {'a','about','above','after','again','against','ain','all','am','an','and','any','are','aren',"aren't",'as','at','be','because','been','before','being','below','between','both','but','by','can','couldn',"couldn't",'d','did','didn',"didn't",'do','does','doesn',"doesn't",'doing','don',"don't",'down','during','each','few','for','from','further','had','hadn',"hadn't",'has','hasn',"hasn't",'have','haven',"haven't",'having','he','her','here','hers','herself','him','himself','his','how','i','if','in','into','is','isn',"isn't",'it',"it's",'its','itself','just','ll','m','ma','me','mightn',"mightn't",'more','most','mustn',"mustn't",'my','myself','needn',"needn't",'no','nor','not','now','o','of','off','on','once','only','or','other','our','ours','ourselves','out','over','own','re','s','same','shan',"shan't",'she',"she's",'should',"should've",'shouldn',"shouldn't",'so','some','such','t','than','that',"that'll",'the','their','theirs','them','themselves','then','there','these','they','this','those','through','to','too','under','until','up','ve','very','was','wasn',"wasn't",'we','were','weren',"weren't",'what','when','where','which','while','who','whom','why','will','with','won',"won't",'wouldn',"wouldn't",'y','you',"you'd","you'll","you're","you've",'your','yours','yourself','yourselves'}
+nltk_stop_words = {'a', 'about', 'above', 'after', 'again', 'against', 'ain', 'all', 'am', 'an', 'and', 'any', 'are',
+                   'aren', "aren't", 'as', 'at', 'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both',
+                   'but', 'by', 'can', 'couldn', "couldn't", 'd', 'did', 'didn', "didn't", 'do', 'does', 'doesn',
+                   "doesn't", 'doing', 'don', "don't", 'down', 'during', 'each', 'few', 'for', 'from', 'further', 'had',
+                   'hadn', "hadn't", 'has', 'hasn', "hasn't", 'have', 'haven', "haven't", 'having', 'he', 'her', 'here',
+                   'hers', 'herself', 'him', 'himself', 'his', 'how', 'i', 'if', 'in', 'into', 'is', 'isn', "isn't",
+                   'it', "it's", 'its', 'itself', 'just', 'll', 'm', 'ma', 'me', 'mightn', "mightn't", 'more', 'most',
+                   'mustn', "mustn't", 'my', 'myself', 'needn', "needn't", 'no', 'nor', 'not', 'now', 'o', 'of', 'off',
+                   'on', 'once', 'only', 'or', 'other', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 're', 's',
+                   'same', 'shan', "shan't", 'she', "she's", 'should', "should've", 'shouldn', "shouldn't", 'so',
+                   'some', 'such', 't', 'than', 'that', "that'll", 'the', 'their', 'theirs', 'them', 'themselves',
+                   'then', 'there', 'these', 'they', 'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up',
+                   've', 'very', 'was', 'wasn', "wasn't", 'we', 'were', 'weren', "weren't", 'what', 'when', 'where',
+                   'which', 'while', 'who', 'whom', 'why', 'will', 'with', 'won', "won't", 'wouldn', "wouldn't", 'y',
+                   'you', "you'd", "you'll", "you're", "you've", 'your', 'yours', 'yourself', 'yourselves'}
 
 
 class NotReadyError(Exception):
@@ -58,7 +72,7 @@ class DocSim:
 
     default_model = "glove-wiki-gigaword-50"
     model_ready = False  # Only really relevant to threaded sub-class
-    
+
     def __init__(self, model=None, stopwords=None, verbose=False):
         # Constructor
 
@@ -77,29 +91,29 @@ class DocSim:
 
     def _setup_model(self, model):
         # Determine which model to use, download/load it, and create the similarity_index
-        
+
         if isinstance(model, Word2VecKeyedVectors):
             # Use supplied model
             self.model = model
         elif isinstance(model, str):
             # Try to download named model
-            if self.verbose: 
+            if self.verbose:
                 print(f'Loading word vector model: {model}')
             self.model = api.load(model)
-            if self.verbose: 
+            if self.verbose:
                 print('Model loaded')
         elif model is None:
             # Download/use default GloVe model
-            if self.verbose: 
+            if self.verbose:
                 print(f'Loading default GloVe word vector model: {self.default_model}')
             self.model = api.load(self.default_model)
-            if self.verbose: 
+            if self.verbose:
                 print('Model loaded')
         else:
             raise ValueError('Unable to load word vector model')
 
         self.similarity_index = WordEmbeddingSimilarityIndex(self.model)
-        
+
         self.model_ready = True
 
     def preprocess(self, doc: str):
@@ -108,8 +122,9 @@ class DocSim:
         doc = sub(r'<[^<>]+(>|$)', " ", doc)
         doc = sub(r'\[img_assist[^]]*?\]', " ", doc)
         doc = sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', " url_token ", doc)
-        
-        return [token for token in simple_preprocess(doc, min_len=0, max_len=float("inf")) if token not in self.stopwords]
+
+        return [token for token in simple_preprocess(doc, min_len=0, max_len=float("inf")) if
+                token not in self.stopwords]
 
     def _softcossim(self, query: str, documents: list):
         # Compute Soft Cosine Measure between the query and each of the documents.
@@ -137,25 +152,52 @@ class DocSim:
         """
 
         if self.model_ready:
-        
+
             corpus = [self.preprocess(document) for document in documents]
             query = self.preprocess(query_string)
 
             if set(query) == set([word for document in corpus for word in document]):
                 raise ValueError('query_string full overlaps content of document corpus')
-            
+
             if self.verbose:
                 print(f'{len(corpus)} documents loaded into corpus')
-            
-            self.dictionary = Dictionary(corpus+[query])
+
+            self.dictionary = Dictionary(corpus + [query])
             self.tfidf = TfidfModel(dictionary=self.dictionary)
-            self.similarity_matrix = SparseTermSimilarityMatrix(self.similarity_index, 
-                                                self.dictionary, self.tfidf)
-                        
+            self.similarity_matrix = SparseTermSimilarityMatrix(self.similarity_index,
+                                                                self.dictionary, self.tfidf)
+
             scores = self._softcossim(query, corpus)
 
             return scores.tolist()
 
+        else:
+            raise NotReadyError('Word embedding model is not ready.')
+
+    def embed_doc(self, documents: list):
+        if self.model_ready:
+
+            corpus = [self.preprocess(document) for document in documents]
+
+            if self.verbose:
+                print(f'{len(corpus)} documents loaded into corpus')
+
+            self.dictionary = Dictionary(corpus)
+            self.tfidf = TfidfModel(dictionary=self.dictionary)
+            self.similarity_matrix = SparseTermSimilarityMatrix(self.similarity_index,
+                                                                self.dictionary, self.tfidf)
+            return corpus
+
+        else:
+            raise NotReadyError('Word embedding model is not ready.')
+
+    def get_scores(self, query_string: str, corpus: list):
+        if self.model_ready:
+            query = self.preprocess(query_string)
+            if self.verbose:
+                print(f'{len(corpus)} documents loaded into corpus')
+            scores = self._softcossim(query, corpus)
+            return scores.tolist()
         else:
             raise NotReadyError('Word embedding model is not ready.')
 

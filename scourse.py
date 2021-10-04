@@ -10,6 +10,9 @@ class SCOURSE:
         if self.perFromETL:
             performETL()
         course_sim("Machine Learning")
+        course_sim("Product Management")
+        course_sim("Software Engineer")
+        course_sim("Consultant")
 
 
 if __name__ == '__main__':
