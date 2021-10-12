@@ -1,6 +1,7 @@
 """
 Group 20: SCOURSE
 Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
+Script to fetch course catalog from Heinz website
 
 """
 
@@ -16,6 +17,7 @@ def striphtml(data):
     return cleantext
 
 
+#scrape course catalog from heinz website and write to file 
 def scrape_courses_from_heinz():
     listOfCourses = []
     r = requests.get("https://api.heinz.cmu.edu/courses_api/course_list/").text
