@@ -1,13 +1,14 @@
 """
 Group 20: SCOURSE
 Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
+File used for scraping employment history stats that are posted by Henz 
 
 """
 
 import tabula
 import os
 
-
+# scrape the data inside all the PDFs available at the provided path
 def scrape_employment_stats(path):
     for path, subdirs, files in os.walk(path):
         for f in files:
