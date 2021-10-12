@@ -1,8 +1,9 @@
 """
-Created on Mon Sep 13 22:15:37 2021
+Group 20: SCOURSE
+Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
 
-@author: abhinaavsingh
 """
+
 from src.etl.coursicle import scrape_course_list
 from src.etl.heinz_courses import scrape_courses_from_heinz
 from src.etl.empoyment_stats import scrape_employment_stats
@@ -11,6 +12,7 @@ import re
 
 
 def performETL():
+    print("Perform ETL operations")
     course_location = scrape_courses_from_heinz()
     scrape_course_list(course_location)
     scrape_employment_stats('resources/data/')

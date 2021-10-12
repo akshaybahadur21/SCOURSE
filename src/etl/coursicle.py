@@ -1,12 +1,11 @@
 """
-Created on Mon Sep 13 19:45:17 2021
+Group 20: SCOURSE
+Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
 
-@author: abhinaavsingh
 """
 
 import requests
 from bs4 import BeautifulSoup
-from urllib.error import HTTPError
 
 
 def scrape_course_list(course_location):

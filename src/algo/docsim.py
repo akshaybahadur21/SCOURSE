@@ -1,4 +1,10 @@
 """
+Group 20: SCOURSE
+Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
+
+"""
+
+"""
 Semantic document similarity using Gensim
 
 @author: 4oh4

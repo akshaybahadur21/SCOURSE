@@ -1,3 +1,9 @@
+"""
+Group 20: SCOURSE
+Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
+
+"""
+
 import re
 
 import requests

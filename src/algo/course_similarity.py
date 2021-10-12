@@ -1,9 +1,15 @@
+"""
+Group 20: SCOURSE
+Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
+
+"""
+
 import numpy as np
 import pandas as pd
 
 import src.algo.docsim as docsim
 
-docsim_obj = docsim.DocSim(verbose=True)
+docsim_obj = docsim.DocSim(verbose=False)
 
 data = pd.read_csv("resources/processed_data/processed_data.tsv", sep='\t')
 data = data.groupby("course_id").agg(
@@ -19,10 +25,9 @@ corpus = docsim_obj.embed_doc(data["course_desc"] + data["course_name_x"])
 def course_sim(query):
     similarities = docsim_obj.get_scores(query, corpus)
     print("For the query: {}, Here are the results ".format(query))
+    count = 0
     for idx, score in (sorted(enumerate(similarities), reverse=True, key=lambda x: x[1])):
+        count += 1
         print(f'{score:0.3f} \t {data.iloc[idx]["course_name_x"]}')
-    print("\n\n")
-
-
-if __name__ == '__main__':
-    course_sim("Machine Learning")
+        if count == 10:
+            break
