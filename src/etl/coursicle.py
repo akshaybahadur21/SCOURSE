@@ -1,13 +1,17 @@
 """
 Group 20: SCOURSE
 Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
+File used to scrape data for courses (course descriptions) from Coursicle website
 
 """
 
 import requests
 from bs4 import BeautifulSoup
 
-
+# scrape course description from the coursicle website
+# course_location is where store course scraped from the Heinz course catalog
+# Only the courses that are scraped from the heinz course catalog are scraped from the coursicle website
+# scraped data is stored in the dump file coursicle_data_dump.txt
 def scrape_course_list(course_location):
     course_list = []
     with open(course_location) as file:
