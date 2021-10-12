@@ -1,14 +1,12 @@
 """
 Group 20: SCOURSE
 Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
-
+Find documents that are similar to a query string.
+Calculated using word similarity (Soft Cosine Similarity) of word embedding vectors
 """
 
 """
 Semantic document similarity using Gensim
-
-@author: 4oh4
-28/03/2020
 
 This class is based on the Gensim Soft Cosine Tutorial notebook:
 https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/soft_cosine_tutorial.ipynb
@@ -180,6 +178,7 @@ class DocSim:
         else:
             raise NotReadyError('Word embedding model is not ready.')
 
+    #Returns the embedding space in which we have mapped embeddings for course descriptions
     def embed_doc(self, documents: list):
         if self.model_ready:
 

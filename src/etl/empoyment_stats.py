@@ -1,7 +1,8 @@
 """
 Group 20: SCOURSE
 Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churia), Naman Arora(namana)
-File used for scraping employment history stats that are posted by Henz 
+File used for scraping employment history stats that are posted by Heinz Career Services office.
+The PDFs are downloaded manually from Handshake and placed in the project directory to be scraped.
 
 """
 
