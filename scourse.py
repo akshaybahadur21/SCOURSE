@@ -10,7 +10,6 @@ from src.utils.print_utils import print_banner, print_menu, print_role_menu, pri
 from src.algo.course_similarity import course_sim
 
 import warnings
-
 warnings.filterwarnings("ignore")
 
 
