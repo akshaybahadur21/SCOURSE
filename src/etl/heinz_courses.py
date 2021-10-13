@@ -32,6 +32,7 @@ def scrape_courses_from_heinz():
             continue
         course = r.findAll('td')
         temp_list = [striphtml(course[0]), striphtml(course[1]), striphtml(course[2])]
+        print(temp_list)    
         listOfCourses.append(temp_list)
     fout = open('resources/data/heinz_courses.txt', 'wt', encoding='utf-8')
     for c in listOfCourses:
