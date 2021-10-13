@@ -6,9 +6,9 @@ This is the master script that calls methods from other scripts to prepare the d
 """
 
 #importing dependencies
-from src.etl.coursicle import scrape_course_list
-from src.etl.heinz_courses import scrape_courses_from_heinz
-from src.etl.empoyment_stats import scrape_employment_stats
+from coursicle import scrape_course_list
+from heinz_courses import scrape_courses_from_heinz
+from empoyment_stats import scrape_employment_stats
 import pandas as pd
 import re
 
@@ -17,13 +17,13 @@ def performETL():
     print("Performing ETL operations")
     course_location = scrape_courses_from_heinz() #scrape heinz course catalog
     scrape_course_list(course_location) #scrape course description from coursicle for the courses found in course catalog
-    scrape_employment_stats('resources/data/') #scrape employment stats and course to career mapping from PDFs
+    scrape_employment_stats('') #scrape employment stats and course to career mapping from PDFs
 
-    coursicle_df = pd.read_csv('resources/data/coursicle_data.csv', error_bad_lines=False,
+    coursicle_df = pd.read_csv('coursicle_data.csv', error_bad_lines=False,
                                names=["course_id", "course_name", "course_desc", "units"])
-    heinz_df = pd.read_csv('resources/data/heinz_courses.csv', error_bad_lines=False,
+    heinz_df = pd.read_csv('heinz_courses.csv', error_bad_lines=False,
                            names=["course_id", "course_name", "units"])
-    smart_df = pd.read_csv('resources/data/Project Prototype Data - SmartEval_clean.csv', error_bad_lines=False)
+    smart_df = pd.read_csv('Project Prototype Data - SmartEval_clean.csv', error_bad_lines=False)
     heinz_df['course_id'] = [re.sub(r'\-', '', str(x)) for x in heinz_df['course_id']]
     # coursicle_df['course_id'] = [re.sub(r'(\w+\s\w+)', '', str(x)) for x in coursicle_df['course_id']]
     coursicle_df['course_id'] = coursicle_df['course_id'].astype(int)

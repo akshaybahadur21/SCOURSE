@@ -75,7 +75,7 @@ def scrape_course_list(course_location):
             pass
     
     #Storing it in the dump file
-    fout = open('resources/data/coursicle_data_dump.txt', 'wt', encoding='utf-8')
+    fout = open('coursicle_data_dump.txt', 'wt', encoding='utf-8')
     for c in listOfCourses:
         dict_values = str(dict(c).values()).strip("dict_values")
         fout.write("%s\n" % dict_values)

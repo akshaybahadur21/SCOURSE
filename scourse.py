@@ -6,9 +6,9 @@ Members : Abhinaav Singh(abhinaas), Akshay Bahadur(akshayba), Chirag Huria(churi
 
 import warnings
 
-from src.algo.course_similarity import course_sim
-from src.etl.etl import performETL
-from src.utils.print_utils import print_banner, print_menu, print_role_menu, print_skillset_menu
+from course_similarity import course_sim
+from etl import performETL
+from print_utils import print_banner, print_menu, print_role_menu, print_skillset_menu
 
 warnings.filterwarnings("ignore")
 

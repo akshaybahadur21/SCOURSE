@@ -10,7 +10,7 @@ import pandas as pd
 from collections import Counter
 
 
-import src.algo.docsim as docsim
+import docsim as docsim
 
 docsim_obj = docsim.DocSim(verbose=False)
 
@@ -34,9 +34,9 @@ def get_course_to_career(path):
     return course_to_career
 
 
-course_to_career = get_course_to_career("resources/data/handshake.csv")
+course_to_career = get_course_to_career("handshake.csv")
 
-data = pd.read_csv("resources/processed_data/processed_data.tsv", sep='\t', converters={'Response Rate':convertPercent})
+data = pd.read_csv("processed_data.tsv", sep='\t', converters={'Response Rate':convertPercent})
 
 #Smart evals provides multiple values for all the individual courses. We will be taking the first value for categorical columns and the mean value of all the rows for numeric columns
 data = data.groupby("course_id").agg(
