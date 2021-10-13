@@ -17,6 +17,25 @@ docsim_obj = docsim.DocSim(verbose=False)
 def convertPercent(x):
     return float(x.strip('%'))/100
 
+def get_course_to_career(path):
+    course_to_career = []
+    with open(path) as file:
+        lines = file.readlines()
+        lines = [line.rstrip() for line in lines]
+        count = 0
+        for l in lines:
+            temp_list = []
+            count += 1
+            if count == 1:
+                continue
+            temp_list.append(l.split(",")[0])
+            temp_list.append(" ".join(l.split(",")[1:]))
+            course_to_career.append(temp_list)
+    return course_to_career
+
+
+course_to_career = get_course_to_career("resources/data/handshake.csv")
+
 data = pd.read_csv("resources/processed_data/processed_data.tsv", sep='\t', converters={'Response Rate':convertPercent})
 
 #Smart evals provides multiple values for all the individual courses. We will be taking the first value for categorical columns and the mean value of all the rows for numeric columns
@@ -30,7 +49,7 @@ data = data.groupby("course_id").agg(
 
 
 #Filtering out courses with low response rate
-data = data[data['Response Rate'] > 0.50] 
+#data = data[data['Response Rate'] > 0.50] 
 
 
 #Smart Evals sub algorithm
@@ -57,14 +76,43 @@ def course_sim(query):
         final_dict[key] = 2*semantic_dict[key] + smartEvelsDict[key]
     
     
+    
+    
+    relevantJobDict = {}
+    count = 0
+    for idx, score in (sorted(enumerate(similarities), reverse=True, key=lambda x: x[1])):
+        temp_list = []
+        count += 1
+        for course in course_to_career:
+            term_count = 0
+            for term in data.iloc[idx]["course_name_x"].strip().split(" "):
+                if term in course[1] and len(term) > 2:
+                    term_count += 1
+                    if term_count > 1 and len(temp_list) < 3 and course[0] not in temp_list:
+                        temp_list.append(course[0])
+        relevantJobDict[data.iloc[idx]["course_name_x"]] = temp_list
+        
+    
+    
+    
+    
+    
+    
 
-    print("For the query: {}, Here are the results ".format(query))
+    print("For the query: {}, Here are the results: \n\n ".format(query))
     #Store and display top 10 courses
     top10 = Counter(final_dict)    
     sorted_dict2 = top10.most_common(10)
+    
     for t in sorted_dict2:
-        score = (t[1]*100)/3.0
-        print(f'{score:0.3f} \t {t[0]}')
+        score = ((t[1]*100)/3.0)
+        stylishScore = "{:.2f}%".format(score)
+        jobListString = ' '.join(str(v) for v in relevantJobDict[t[0]])
+        print("Course:", t[0])
+        print("Relevance Score:", stylishScore)
+        print("Historically Matched Jobs:", ','.join(str(v) for v in relevantJobDict[t[0]]))
+        print('-----------------------------------------------------------\n')
+
     
     
         
