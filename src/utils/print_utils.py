@@ -21,7 +21,7 @@ def print_banner():
 def print_menu():
     print("""
     1. Perform Search
-    2. Perform ETL
+    2. Perform ETL (8-10 minutes)
     3. Exit
     """)
 

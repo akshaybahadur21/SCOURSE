@@ -30,7 +30,11 @@ class SCOURSE:
                 role = input()
                 print_skillset_menu()
                 skill = input()
-                course_sim("{} {}".format(role, skill))
+                try:
+                    course_sim("{} {}".format(role, skill))
+                except:
+                    print("Couldn't process the query. Try again")
+                    pass
             else:
                 print("Please select an appropriate input.")
 
