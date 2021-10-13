@@ -21,7 +21,8 @@ def print_banner():
 def print_menu():
     print("""
     1. Perform Search
-    2. Exit
+    2. Perform ETL
+    3. Exit
     """)
 
 
