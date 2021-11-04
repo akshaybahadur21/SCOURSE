@@ -53,7 +53,7 @@ python3 scourse.py
 ```
 
 ## Results 📊
-<img src="TBA">
+<img src="https://github.com/akshaybahadur21/BLOB/blob/master/scourse.gif">
 
 ## References: 🔱
  
