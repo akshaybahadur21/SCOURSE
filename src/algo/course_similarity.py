@@ -112,6 +112,7 @@ def course_sim(query):
         print("Relevance Score:", stylishScore)
         print("Historically Matched Jobs:", ','.join(str(v) for v in relevantJobDict[t[0]]))
         print('-----------------------------------------------------------\n')
+    return sorted_dict2, relevantJobDict
 
     
     
