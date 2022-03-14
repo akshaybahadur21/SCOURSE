@@ -26,7 +26,7 @@ with st.spinner('Please wait while we load up the data'):
     
 
 
-st.image("resources/scourse_logo.png", width=500)
+st.image("resources/logo4.png", width=200)
 st.header("SCOURSE")
 st.markdown("""
 You can get smart course recommendations for your targeted job roles and skillset.  
