@@ -1,6 +1,8 @@
 # SCOURSE 🔍 🎓
 
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/akshaybahadur21/CourseBaby/blob/main/LICENSE) 
+[![](https://img.shields.io/badge/GitHub-Repo-brightgreen)](https://github.com/akshaybahadur21/SCOURSE)
+[![](https://img.shields.io/badge/scourse-me-orange)](scourse.me)
 
 This application aims to generate smart course recommendations for students. As input, it takes the job role the student wants to aim for, and any skills the student wants to gain. The application will perform a semantic search through available course descriptions that we have scraped, and courses that match are analysed based on the metrics found on [Smart Evals](smartevals.com). A score is generated from both the analyses and used to calculate the final ranking of each course. Top 10 courses are displayed to the user. Additionally, the courses that are found to be relevant are used to fetch the top job roles that they are known to lead to, thus helping the student explore alternative career paths. A PDF available on Heinz Career Resources page on Handshake is used for this lookup. The job roles found are also returned to the user. 
 
