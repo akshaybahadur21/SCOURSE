@@ -26,9 +26,11 @@ with st.spinner('Please wait while we load up the data'):
     cache_embeddings()
     course_sim = cache_similarity()
 
-st.image("resources/logo4.png", width=200)
-st.header("SCOURSE 🔍🎓")
-st.markdown("""A smart course recommender for CMU students.""")
+st.image("resources/logo4.png", width=400)
+st.markdown("""
+[![](https://img.shields.io/badge/GitHub-Source-brightgreen)](https://github.com/akshaybahadur21/SCOURSE)
+""")
+st.markdown("""A smart course recommender for CMU students 🔍🎓""")
 st.warning("Disclaimer : The course recommender is assertive in nature and has been developed as part of a project.")
 st.subheader("How to use Scourse")
 st.markdown("""
@@ -38,7 +40,7 @@ st.markdown("""
 """)
 
 st.markdown("""
-##### Made with ❤️ and 🦙 by [Abhinaav Singh](https://abhinaav.com), [Akshay Bahadur](https://akshaybahadur.com), [Chirag Huria](https://linkedin.com/in/chirag-huria), and [Naman Arora](https://namanarora.me)
+###### Made with ❤️ and 🦙 by [Abhinaav Singh](https://abhinaav.com), [Akshay Bahadur](https://akshaybahadur.com), [Chirag Huria](https://linkedin.com/in/chirag-huria), and [Naman Arora](https://namanarora.me)
 """)
 
 st.markdown(
