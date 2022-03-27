@@ -73,8 +73,8 @@ There are two dependencies outside of Anaconda that need to be installed. These 
 ### Streamlit dashboard
 https://scourse.me  
 
-![demo-1](resources\scourse-demo-1.png)
-![demo-2](resources\scourse-demo-2.png)
+![demo-1](resources/scourse-demo-1.png)
+![demo-2](resources/scourse-demo-2.png)
 
 ### Command-line interface
 ![demo-cli](https://github.com/akshaybahadur21/BLOB/blob/master/scourse.gif)
