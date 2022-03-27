@@ -69,4 +69,13 @@ There are two dependencies outside of Anaconda that need to be installed. These 
 7.	The program also displays a list of historically recorded career outcomes for the recommended courses. These have been scraped from the Handshake Resources section, and will give you an idea of where people who have taken these courses have ended up. 
 
 ## Results 📊
-<img src="https://github.com/akshaybahadur21/BLOB/blob/master/scourse.gif">
+
+### Streamlit dashboard
+https://scourse.me  
+
+![demo-1](resources\scourse-demo-1.png)
+![demo-2](resources\scourse-demo-2.png)
+
+### Command-line interface
+![demo-cli](https://github.com/akshaybahadur21/BLOB/blob/master/scourse.gif)
+<!-- <img src="https://github.com/akshaybahadur21/BLOB/blob/master/scourse.gif"> -->
