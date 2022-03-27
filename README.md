@@ -1,5 +1,7 @@
 # SCOURSE 🔍 🎓
 
+The application is deployed with a Streamlit powered front end @ https://scourse.me 
+
 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000)](https://github.com/akshaybahadur21/CourseBaby/blob/main/LICENSE) 
 [![](https://img.shields.io/badge/GitHub-Repo-brightgreen)](https://github.com/akshaybahadur21/SCOURSE)
 [![](https://img.shields.io/badge/scourse-me-orange)](scourse.me)
