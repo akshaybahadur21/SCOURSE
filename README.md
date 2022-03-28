@@ -1,3 +1,11 @@
+<div align="center">
+
+<p align="center"> <img src="https://github.com/akshaybahadur21/SCOURSE/blob/main/resources/logo4.png" height="140px"><br></p>
+
+**A Smart Course rRecommender System**
+
+</div>
+
 # SCOURSE 🔍 🎓
 
 The application is deployed with a Streamlit powered front end @ https://scourse.me 
