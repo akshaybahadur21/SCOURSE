@@ -2,7 +2,7 @@
 
 <p align="center"> <img src="https://github.com/akshaybahadur21/SCOURSE/blob/main/resources/logo4.png" height="140px"><br></p>
 
-**A Smart Course rRecommender System**
+**A Smart Course Recommender System**
 
 </div>
 
