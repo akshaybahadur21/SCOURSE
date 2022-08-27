@@ -28,11 +28,11 @@ def scrape_course_list(course_location):
             #For most courses, the url has the ISM path
             try:
                 req = requests.get(
-                "https://api.scrapingdog.com/scrape?api_key=6143dd1d632a6c4dc0f276c0&url=http://www.coursicle.com/cmu/courses/ISM/" + str(
+                "https://api.scrapingdog.com/scrape?api_key=6309935ebd5ba80defb743e4&url=http://www.coursicle.com/cmu/courses/ISM/" + str(
                     course) + "/")
                 r = req.text
             except: # HTTPError as http_error:
-                print("Exception raised: ", req.status_code)
+                print("Exception raised: ", req.text)
             
             
             bsyc = BeautifulSoup(r, "lxml")
@@ -40,13 +40,13 @@ def scrape_course_list(course_location):
             #In case the url has HC path. For general heinz courses
             if bsyc.find('title').get_text() == "404 Not Found":
                 r = requests.get(
-                "https://api.scrapingdog.com/scrape?api_key=6143dd1d632a6c4dc0f276c0&url=http://www.coursicle.com/cmu/courses/HC/" + str(
+                "https://api.scrapingdog.com/scrape?api_key=6309935ebd5ba80defb743e4&url=http://www.coursicle.com/cmu/courses/HC/" + str(
                     course) + "/").text
                 bsyc = BeautifulSoup(r, "lxml")
                 
             #For the remaining Public Policy classes. The url here is under PPP
             if bsyc.find('title').get_text() == "404 Not Found":
-                url_string = "https://api.scrapingdog.com/scrape?api_key=6143dd1d632a6c4dc0f276c0&url=http://www.coursicle.com/cmu/courses/PPP/" + str(
+                url_string = "https://api.scrapingdog.com/scrape?api_key=6309935ebd5ba80defb743e4&url=http://www.coursicle.com/cmu/courses/PPP/" + str(
                     course) + "/"
                 r = requests.get(url_string).text
                 bsyc = BeautifulSoup(r, "lxml")
@@ -81,3 +81,7 @@ def scrape_course_list(course_location):
         fout.write("%s\n" % dict_values)
     fout.close
     print("Coursicle web scraping completed.")
+
+
+if __name__ == '__main__':
+    scrape_course_list("resources/processed_data/processed_data.tsv")
