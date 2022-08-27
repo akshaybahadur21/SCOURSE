@@ -22,9 +22,9 @@ def cache_similarity():
 st.set_page_config(page_title='SCOURSE',
                    layout='wide')
 
-with st.spinner('Please wait while we load up the data'):
-    cache_embeddings()
-    course_sim = cache_similarity()
+# with st.spinner('Please wait while we load up the data'):
+#     cache_embeddings()
+#     course_sim = cache_similarity()
 
 st.image("resources/logo4.png", width=400)
 st.markdown("""
@@ -56,6 +56,17 @@ st.markdown(
     </style>
     """,
     unsafe_allow_html=True,
+)
+
+st.markdown(
+    f'''
+        <style>
+            .sidebar .sidebar-content {{
+                width: 375px;
+            }}
+        </style>
+    ''',
+    unsafe_allow_html=True
 )
 
 st.sidebar.info("Data Sources : Smartevals, coursicle and Carnegie Mellon University course catalogue")
