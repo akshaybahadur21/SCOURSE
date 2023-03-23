@@ -79,7 +79,7 @@ There are two dependencies outside of Anaconda that need to be installed. These 
 ## Results 📊
 
 ### Streamlit dashboard
-https://scourse.me  
+https://scourse.streamlit.app/  
 
 ![demo-1](resources/scourse-demo-1.png)
 ![demo-2](resources/scourse-demo-2.png)
